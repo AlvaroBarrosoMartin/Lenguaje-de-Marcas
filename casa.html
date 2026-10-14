@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+div#casa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div#techo{
+    width: 500px;
+    height: 70px;
+    background-color: blue;
+}
+div#cuerpo{
+    position: relative;
+    width: 450px;
+    height: 389px;
+    background-color: gray;
+}
+div#puerta{
+    position: absolute;
+    bottom: 0;
+    left: 180px;
+    width: 90px;
+    height: 110px;
+    background-color: green;
+}
+div.ventana{
+    position: absolute;
+    top: 50px;
+    width: 70px;
+    height: 70px;
+    background-color: orange;
+}
+div#ventana_1{
+    margin-top: 20px;
+    left: 60px;
+}
+div#ventana_2{
+    margin-top: 90px;
+    right: 60px;
+}
+
+    </style>
+</head>
+<body>
+
+<div id="casa">
+    <div id="techo"></div>
+    <div id="cuerpo">
+        <div id="puerta"></div>
+        <div class="ventana" id="ventana_1"></div>
+        <div class="ventana" id="ventana_2"></div>  
+    </div>
+</div>
+  
+</body>
+</html>
