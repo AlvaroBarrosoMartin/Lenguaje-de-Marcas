@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /* declarar un array de varias notas, se pide cuantas notas tenga guardado el array,  
+        cuantas notas suspensas, visualizar aquellas notas superiores a la media */
+
+        let lista = [10,5,3,8];
+        let resul, resul1, resul2;
+        
+
+        function Contar(lista){
+            
+            return lista.length;            
+        }
+
+        function Notas_suspensas(lista){
+            let suspensos = 0
+            for(let i=0; i < lista.length; i++){
+                if (lista[i] < 5){
+                    suspensos += 1
+                }
+            }
+            return suspensos
+        }
+
+        function Media(lista){
+            let suma = 0;
+            for(let i=0; i < lista.length; i++){
+                 suma += lista[i];
+            }
+            let media = suma / lista.length;
+
+                let superiores = [];
+            for(let i=0; i < lista.length; i++){
+                if(lista[i] > media){
+                        superiores.push(lista[i]);
+                }
+            }
+
+
+            
+        
+            return superiores;
+        }
+
+
+
+
+
+        function visualizar(resul,resul1,resul2){
+            alert("Los elementos del array son: " + resul);
+            alert("Las notas suspensas son: " + resul1);
+            alert("El superior de la media es: " + resul2);
+        }
+
+
+        resul = Contar(lista);
+        resul1 = Notas_suspensas(lista);
+        resul2 = Media(lista);
+        visualizar(resul,resul1,resul2);
+
+
+    </script>
+</body>
+</html>
