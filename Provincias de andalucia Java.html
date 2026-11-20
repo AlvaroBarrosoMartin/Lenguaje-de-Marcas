@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Almacenar en un array las 8 provincias de andalucia, pedir por teclado nombre de provincia, 
+    averiguar si se encuentra en el array o no.-->
+
+    <script>
+        let lista = ["Cadiz", "Malaga", "Granada", "Almeria", "Jaen", "Cordoba", "Sevilla", "Huelva"];
+        
+
+
+        function Visualizar(lista){
+            let nombre = prompt("Introduce la provincia: ");
+            for(let i=0; i < lista.length; i++){
+                if(lista[i] === nombre){
+                    alert("La provincia " + nombre + " se enceuntra en las Provincias de Andalucia");
+                    return;
+                }
+            }
+            alert("La provincia introducida no pertenece a ninguba Provincia de Andalucia");
+        }
+
+    Visualizar(lista);
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
